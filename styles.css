@@ -408,12 +408,12 @@ form div h1 input {
     border-radius: .5vw;
     transition: 1000ms ease-in-out;
     margin: 1vw;
-    width: 5vw;
+    height: 7.5vh;
     float: left;
 }
 
 .download-list a img:hover {
-    width: 793px;
+    height: 75vh;
 }
 
 .team-header {
