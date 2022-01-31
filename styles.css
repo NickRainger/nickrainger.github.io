@@ -14,8 +14,9 @@
 
 body {
     background: var(--blue1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
-
 
 html {
     font-size: 15px;
@@ -481,20 +482,26 @@ form div h1 input {
     text-decoration-thickness: 5px;
 }
 
-/*
-#footer {
-    bottom: 0;
-    background: red;
-    position: absolute;
+
+footer {
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
+    position: relative;
+    background: var(--blue3);
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;
-    width: 93vw;
-    margin: 2vw;
+    margin: 2.5vw;
     margin-bottom: 0;
-    padding: 1vw;
+    padding: 2.5vw;
     text-align: center;
-    display: block;
-}*/
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    border-radius: 1vh;
+    margin-bottom: 0;
+    flex: 1 1 100%;
+}
 
 .vandaag {
     text-align: center;
