@@ -497,6 +497,12 @@ footer > div{
     flex-direction: row;
 }
 
+footer div img {
+    height: 30px;
+    width: auto;
+    margin: .5vw;
+}
+
 footer div a, footer div div{
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;
@@ -505,7 +511,7 @@ footer div a, footer div div{
     padding: 1vw;
     transition: 500ms;
 }
-footer div a:hover, footer div div:hover {
+footer div a:hover, footer div div {
     background: var(--blue4);
     transition: 500ms;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
