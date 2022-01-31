@@ -380,7 +380,8 @@ form div h1 input {
 }
 
 .download-list a i{
-    font-size: 1rem;
+    font-size: 1vw;
+    margin: 10px;
 }
 
 .download-list a {
@@ -484,7 +485,7 @@ form div h1 input {
 }
 
 
-footer {
+footer > div{
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
     background: var(--blue3);
     border-top-left-radius: 2.5vh;
@@ -496,7 +497,7 @@ footer {
     flex-direction: row;
 }
 
-footer a {
+footer div a, footer div div{
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;
     margin-bottom: 0;
@@ -504,7 +505,7 @@ footer a {
     padding: 1vw;
     transition: 500ms;
 }
-footer a:hover {
+footer div a:hover, footer div div:hover {
     background: var(--blue4);
     transition: 500ms;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
