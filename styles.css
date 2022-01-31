@@ -384,7 +384,7 @@ form div h1 input {
 }
 
 .download-list a {
-    border-radius: 5px;
+    border-radius: 5vh;
     line-height: 10vh;
     font-size: 1vw;
     background: var(--blue2);
@@ -394,7 +394,7 @@ form div h1 input {
     border-bottom-width: 5px;
     border-color: #024C97;
     margin: 1vw;
-    padding: 1vw;
+    padding: .5vw;
     cursor: pointer;
     pointer-events: all;
     border-radius: 5px;
