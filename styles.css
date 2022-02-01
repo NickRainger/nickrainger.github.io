@@ -104,7 +104,8 @@ html {
     transition: 100ms ease-in-out;
 }
 
-.link:hover, .linkhover {
+.link:hover,
+.linkhover {
     transform: scale(1.05);
     color: #ffffff;
 }
@@ -148,11 +149,17 @@ html {
     font-size: 20px;
     pointer-events: all;
 }
-.nieuws-header p span, .nieuws-header h1 span {
+.nieuws-header p span,
+.nieuws-header h1 span {
     background: var(--blue4);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
+}
+
+.training {
+    padding: 5px 10px;
+    margin: 5px;
 }
 
 .nieuws-header p a {
@@ -283,7 +290,8 @@ html.swup-enebled {
     font-size: 10vh;
 }
 
-.BUnderline {
+.BUnderline,
+.training a {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: blue;
@@ -340,7 +348,9 @@ form h1 {
     flex: auto;
 }
 
-form div input, form button, form textarea {
+form div input,
+form button,
+form textarea {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75) inset;
     display: flex;
     flex-direction: column;
@@ -362,7 +372,8 @@ form textarea {
     width: 100%;
 }
 
-form div h1 > input:focus, form > textarea:focus {
+form div h1 > input:focus,
+form > textarea:focus {
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.75);
     transition: ease-in-out 500ms;
     border-color: #ff8000;
@@ -442,7 +453,9 @@ form div h1 input {
     padding: 30px;
 }
 
-.team-text, .team-text span, .team-text a{
+.team-text,
+.team-text span,
+.team-text a{
     border-radius: 5px;
     right: 0;
     font-size: 20px;
@@ -503,7 +516,8 @@ footer div img {
     margin: .5vw;
 }
 
-footer div a, footer div div{
+footer div a,
+footer div div{
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;
     margin-bottom: 0;
@@ -511,7 +525,8 @@ footer div a, footer div div{
     padding: 1vw;
     transition: 500ms;
 }
-footer div a:hover, footer div div {
+footer div a:hover,
+footer div div {
     background: var(--blue4);
     transition: 500ms;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
@@ -557,7 +572,10 @@ hr {
         flex-direction: column;
         gap: 2rem;
     }
-    .main-title, .main-title span, .RhenenLink, .main-title p, .fa-map-marker-alt{
+    .main-title,
+    .main-title span,
+    .RhenenLink, .main-title p, 
+    .fa-map-marker-alt {
         top: 10vw;
         left: 5vw;
         font-size: 10vw;
@@ -565,13 +583,17 @@ hr {
     .logo {
         display: none;
     }
-    .team-text, .team-text span {
+    .team-text,
+    .team-text span {
         font-size: 2.5vw;
     }
     .link {
         font-size: 3.5vw;
     }
-    form input, form textarea, form button, form textarea {
+    form input,
+    form textarea,
+    form button,
+    form textarea {
         width: 100%;
     }
     .intro-container {
@@ -628,7 +650,8 @@ hr {
     .Contributie {
         width: 70vw;
     }
-    .nieuws-header p, .nieuws-header h1 {
+    .nieuws-header p,
+    .nieuws-header h1 {
         text-align: center;
     }
 }
