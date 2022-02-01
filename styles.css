@@ -509,7 +509,8 @@ form div h1 input {
 }
 
 
-footer > div{
+footer > div {
+    flex-wrap: wrap;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
     background: var(--blue3);
     border-top-left-radius: 2.5vh;
@@ -536,6 +537,7 @@ footer div div{
     padding: 1vw;
     transition: 500ms;
 }
+
 footer div a:hover,
 footer div div {
     background: var(--blue4);
@@ -665,10 +667,10 @@ hr {
     .nieuws-header h1 {
         text-align: center;
     }
+    footer > div {
+        font-size: 2vw;
+    }
 }
-
-
-
 
 @keyframes bounce {
     0% {
