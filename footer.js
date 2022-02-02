@@ -1,3 +1,3 @@
 $(function(){
-    $('#footer').load('/footer.html');
+    $('#wallpaper').load('/wallpaper.html');
 })

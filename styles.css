@@ -23,7 +23,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.background, .background2, .background3 {
+.background1, .background2, .background3, .background4, .background5 {
     margin: 0;
     width: 100%;
     height: 100%;
@@ -35,16 +35,25 @@ html {
     z-index: -10;
     left: 0;
 }
-.background {
-    background-image: url(/img/img1.jpg);
+.background1 {
+    background-image: url(/img/Volleybal1.jpg);
+    animation: bg 50s 5s infinite;
 }
 .background2 {
-    background-image: url(/img/img2.jpg);
-    animation: background 30s 10s infinite;
+    background-image: url(/img/Volleybal2.jpg);
+    animation: bg 50s -5s infinite;
 }
 .background3 {
-    background-image: url(/img/img6.jpg);
-    animation: background 30s 0s infinite;
+    background-image: url(/img/Volleybal3.jpg);
+    animation: bg 50s -15s infinite;
+}
+.background4 {
+    background-image: url(/img/Volleybal4.jpg);
+    animation: bg 50s -25s infinite;
+}
+.background5 {
+    background-image: url(/img/Volleybal5.jpg);
+    animation: bg 50s -35s infinite;
 }
 
 .fourofour-background {
@@ -221,7 +230,6 @@ html {
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
     background: var(--blue3);
     border-radius: 1vh;
-    border: 1px solid grey;
 }
 
 .Information-list {
@@ -236,7 +244,7 @@ html {
 }
 
 .dropdown-heading {
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid var(--blue1);
     background: linear-gradient(0deg, rgba(42,26,40,1) 0%, rgba(38,26,50,1) 100%); 
     background: var(--blue4);
     padding: .3vw 1vw;
@@ -686,23 +694,35 @@ hr {
         transform: translatey(0);
     }
 }
-@keyframes background {
+@keyframes bg {
     0% {
         opacity: 0;
     }
     3% {
         opacity: 0;
     }
-    33% {
+    20% {
         opacity: 0;
     }
-    36% {
+    23% {
         opacity: 1;
     }
-    67% {
+    40% {
         opacity: 1;
     }
-    70% {
+    43% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    63% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    83% {
         opacity: 0;
     }
     100% {
