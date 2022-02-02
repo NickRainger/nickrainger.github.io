@@ -88,6 +88,8 @@ html {
     left: 1vw;
     opacity: .5;
     transition: 200ms ease-in-out;
+    opacity: 0;
+    animation: header 500ms 1000ms ease-in-out forwards;
 }
 .logo:hover {
     transition: 200ms ease-in-out;
@@ -111,6 +113,13 @@ html {
     justify-content: center;
     right: 0;
     font-size: 1vw;
+    opacity: 0;
+    animation: header 500ms 500ms ease-in-out forwards;
+}
+@keyframes header {
+    0% {transform: translateY(-100px); opacity: 0;}
+    70% {transform: translateY(10px);}
+    100% {transform: translateY(0); opacity: 1;}     
 }
 
 .link {
