@@ -403,7 +403,7 @@ form textarea {
 
 form div h1 > input:focus,
 form > textarea:focus {
-    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
     transition: ease-in-out 500ms;
     border-color: #ff8000;
 }
