@@ -481,13 +481,24 @@ form div h1 input {
 }
 
 .teams-container {
+    font-size: 20px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     flex: 50%;
     width: 90vw;
     padding: 2.5vw;
     margin: 2.5vw;
     background: #296d2e;
+    border-radius: 5vh;
+}
+
+.teams-container a {
+    flex: 1 1 20em;
+    padding: .25vw;
+    margin: .25vw;
+    text-align: center;
+    background: #ff0000;
+    border-radius: 1vh;
 }
 
 .team-header {
