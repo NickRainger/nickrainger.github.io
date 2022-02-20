@@ -35,26 +35,30 @@ html {
     top: 0;
     z-index: -10;
     left: 0;
+    width: 110vw;
+    --backgrounds: 5;
+    --time: 10;
 }
+
 .background1 {
     background-image: url(/img/Volleybal1.jpg);
-    animation: bg 50s 5s infinite;
+    animation: bg 50s 5s infinite linear;
 }
 .background2 {
     background-image: url(/img/Volleybal2.jpg);
-    animation: bg 50s -5s infinite;
+    animation: bg 50s -5s infinite linear;
 }
 .background3 {
     background-image: url(/img/Volleybal3.jpg);
-    animation: bg 50s -15s infinite;
+    animation: bg 50s -15s infinite linear;
 }
 .background4 {
     background-image: url(/img/Volleybal4.jpg);
-    animation: bg 50s -25s infinite;
+    animation: bg 50s -25s infinite linear;
 }
 .background5 {
     background-image: url(/img/Volleybal5.jpg);
-    animation: bg 50s -35s infinite;
+    animation: bg 50s -35s infinite linear;
 }
 
 .fourofour-background {
@@ -130,8 +134,17 @@ html {
     font-size: 15px;
     border-style: none;
     outline: none;
-    cursor: pointer;
     transition: 100ms ease-in-out;
+}
+
+.link a {
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff80;
+}
+.link a:hover {
+    color: #ffffff;
 }
 
 .link:hover,
@@ -299,12 +312,12 @@ html {
     position: absolute;
     z-index: -5;
     opacity: 1;
-    transform: translatex(0);
+    transform: scale(1);
     transition: 300ms ease-in-out;
 }
 
 html.is-animating .transition-fade {
-    transform: translateY(10vw);
+    transform: scale(0);
     opacity: 0;
     pointer-events: none;
 }
@@ -465,6 +478,16 @@ form div h1 input {
 
 .download-list a img:hover {
     height: 75vh;
+}
+
+.teams-container {
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    width: 90vw;
+    padding: 2.5vw;
+    margin: 2.5vw;
+    background: #296d2e;
 }
 
 .team-header {
@@ -723,6 +746,7 @@ hr {
         opacity: 0;
     }
     20% {
+        left: 0vw;
         opacity: 0;
     }
     23% {
@@ -732,6 +756,7 @@ hr {
         opacity: 1;
     }
     43% {
+        left: -10vw;
         opacity: 0;
     }
     60% {
