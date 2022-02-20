@@ -124,7 +124,7 @@ html {
 @keyframes header {
     0% {transform: translateY(-100px); opacity: 0;}
     70% {transform: translateY(10px);}
-    100% {transform: translateY(0); opacity: 1;}     
+    100% {transform: translateY(0); opacity: 1;}
 }
 
 .link {
@@ -312,12 +312,12 @@ html {
     position: absolute;
     z-index: -5;
     opacity: 1;
-    transform: scale(1);
-    transition: 300ms ease-in-out;
+    transform: translateX(0);
+    transition: 200ms ease-in-out;
 }
 
 html.is-animating .transition-fade {
-    transform: scale(0);
+    transform: translateX(10vw);
     opacity: 0;
     pointer-events: none;
 }
@@ -330,6 +330,7 @@ html.swup-enebled {
     margin: 0;
     position: absolute;
     top: 15vh;
+    width: 75vw;
     left: 25vw;
     font-size: 10vh;
     z-index: -1;
@@ -381,7 +382,7 @@ form {
 
 form button {
     font-size: 1rem;
-    list-style-type:none;
+    list-style-type: none;
     background: var(--blue3);
     padding: .5vw;
     margin: 2vw .5vw;
@@ -395,7 +396,7 @@ form button:hover {
 
 form h1 {
     margin: 3vw 1vw 0;
-    flex: auto;
+    flex: 1 1 15em;
 }
 
 form div input,
@@ -422,6 +423,10 @@ form textarea {
     width: 100%;
 }
 
+form button, form textarea {
+    margin: 1vw;
+}
+
 form div h1 > input:focus,
 form > textarea:focus {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
@@ -430,6 +435,10 @@ form > textarea:focus {
 }
 form div h1 input {
     width: 100%;
+}
+
+form div h1 span {
+    color: blue;
 }
 
 .download-list {
@@ -490,21 +499,27 @@ form div h1 input {
     margin: 1.25vw;
     background: var(--blue2);
     border-radius: 5vh;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
 }
 
 .teams-container a {
     flex: 1 1 20em;
-    padding: .5vw;
+    padding: 1vw;
     margin: .5vw;
-    text-align: center;
     background: var(--blue3);
     border-radius: 3vh;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
+    transition: 500ms;
 }
 .teams-container a img {
     float: left;
     width: 45%;
-    margin: 5%;
+    margin-right: 5%;
     border-radius: 1vh;
+}
+
+.teams-container a:hover {
+    transform: scale(1.05);
 }
 
 .team-header {
@@ -626,15 +641,9 @@ hr {
     form div {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     } 
     form div h1 {
-        width: auto;
-    }
-    form div > *:nth-child(1) {
-        margin-left: 0;
-    }
-    form div > :nth-child(3) {
-        margin-right: 0;
     }
     .dropdown:hover > .link + .dropdown-menu {
         opacity: 1;
