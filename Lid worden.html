@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png">
+    <script src="https://kit.fontawesome.com/b44cce2a08.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/header.js"></script>
+    <script src="/wallpaper.js"></script>
+    <script src="/footer.js"></script>
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <section id="header"></section>
+    <main id="swup" class="transition-fade">
+        <section>
+        </section>
+        <div class="big-spacer"></div>
+        <section>
+            <form action="https://formsubmit.co/f27431ee831bf5cb7eb9e1f30f42c66f" method="POST">
+                <div>
+                    <h1>Naam<span>*</span>
+                        <input placeholder="Naam" class="text1" name="Naam" required>
+                    </h1>
+                    <h1>Onderwerp<span>*</span>
+                        <input placeholder="meetrainen/lid worden/..." name="_subject" required>
+                    </h1>
+                    <h1>Email<span>*</span>
+                        <input placeholder="Email" name="email" required>
+                    </h1>
+                    <h1>woonplaats<span>*</span>
+                        <input placeholder="Woonplaats" name="Woonplaats" required>
+                    </h1>
+                    <h1>Adres<span>*</span>
+                        <input placeholder="Adres" name="Adres" required>
+                    </h1>
+                    <h1>Postcode<span>*</span>
+                        <input placeholder="1234 AB" name="Postcode" required>
+                    </h1>
+                    <h1>Telefoonnummer<span>*</span>
+                        <input placeholder="+31 06 12345678" name="Telefoonnummer" required>
+                    </h1>
+                    <h1>Geboortedatum<span>*</span>
+                        <input placeholder="DD MM JJ" name="Geboortedatum" required>
+                    </h1>
+                    <h1>Geslacht
+                        <select name="Geslacht">
+                            <option value="Man">Man</option>
+                            <option value="Vrouw">Vrouw</option>
+                            <option value="Apache">Apache</option>
+                            <option value="Non-binary">Non-binary</option>
+                        </select>
+                    </h1>
+                    <h1>Deelname Competitie
+                        <select name="Competitie">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
+                    </h1>
+                </div>
+                <h1>bericht</h1>
+                <textarea placeholder="Bericht naar uhm nick ofzo idk" class="bericht" name="message" cols="40" rows="10"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="http://nickrainger.tk/Verzonden.html">
+                <button type="submit">Verzenden</button>
+            </form> 
+        </section>
+        <div class="small-spacer"></div>
+        <h1 class="main-title">
+            <span class="BUnderline">Contact</span><br>Pagina. 
+            <p class="arrowdown">▼</p>
+        </h1>
+    </main>
+    <a href="/index.html">
+        <img src="/img/logo2.png" alt="Excelsior Logo" class="logo">
+    </a>
+    <div id="wallpaper"></div>
+    <script src="/main.js"></script>
+</body>
+</html>
