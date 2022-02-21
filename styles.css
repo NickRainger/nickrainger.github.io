@@ -433,11 +433,6 @@ form > textarea:focus {
     transition: ease-in-out 500ms;
     border-color: #ff8000;
 }
-form div h1 > select:hover {
-    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
-    transition: ease-in-out 0s;
-    border-color: #ff8000;
-}
 form div h1 input {
     width: 100%;
 }
