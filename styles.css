@@ -401,7 +401,8 @@ form h1 {
 
 form div input,
 form button,
-form textarea {
+form textarea,
+form div h1 select {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75) inset;
     display: flex;
     flex-direction: column;
@@ -418,7 +419,6 @@ form textarea {
     outline: 0;
     transition: ease-in-out 500ms;
 }
-
 form textarea {
     width: 100%;
 }
@@ -431,6 +431,11 @@ form div h1 > input:focus,
 form > textarea:focus {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
     transition: ease-in-out 500ms;
+    border-color: #ff8000;
+}
+form div h1 > select:hover {
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
+    transition: ease-in-out 0s;
     border-color: #ff8000;
 }
 form div h1 input {
@@ -491,7 +496,8 @@ form div h1 span {
 
 .teams-container {
     font-size: 20px;
-    display: flex;
+    grid-template-columns: auto auto auto;
+    display: grid;
     flex-wrap: wrap;
     flex: 50%;
     width: 95vw;
@@ -501,9 +507,19 @@ form div h1 span {
     border-radius: 5vh;
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
 }
+@media screen and (max-width: 1200px) {
+    .teams-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .teams-container {
+    grid-template-columns:  auto;
+    }
+}
 
 .teams-container a {
-    flex: 1 1 20em;
+    
     padding: 1vw;
     margin: .5vw;
     background: var(--blue3);
@@ -513,7 +529,7 @@ form div h1 span {
 }
 
 .teams-container a img {
-    float: left;
+    float: right;
     width: 45%;
     margin-right: 5%;
     border-radius: 1vh;
