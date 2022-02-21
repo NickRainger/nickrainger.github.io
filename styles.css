@@ -511,6 +511,7 @@ form div h1 span {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75);
     transition: 500ms;
 }
+
 .teams-container a img {
     float: left;
     width: 45%;
@@ -642,8 +643,6 @@ hr {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    } 
-    form div h1 {
     }
     .dropdown:hover > .link + .dropdown-menu {
         opacity: 1;
