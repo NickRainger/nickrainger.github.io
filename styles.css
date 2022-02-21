@@ -23,6 +23,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 .background1, .background2, .background3, .background4, .background5 {
     margin: 0;
     width: 100%;
