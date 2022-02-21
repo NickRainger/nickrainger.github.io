@@ -16,11 +16,11 @@ body {
     background: var(--blue1);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
 }
 
 html {
     font-size: 15px;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -433,12 +433,19 @@ form > textarea:focus {
     transition: ease-in-out 500ms;
     border-color: #ff8000;
 }
-form div h1 input {
+form div h1 input, form div h1 select {
     width: 100%;
 }
 
+form div h1 input[type="file"] {
+    background-color: #ff0000;
+    color: #444444;
+    opacity: 0;
+    
+}
+
 form div h1 span {
-    color: blue;
+    color: red;
 }
 
 .download-list {
