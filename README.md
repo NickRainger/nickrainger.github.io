@@ -1,1 +1,1 @@
-i dikke ma
+U dikke ma
