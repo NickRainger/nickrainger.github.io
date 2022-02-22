@@ -372,8 +372,6 @@ form {
     width: 80vw;
     background: var(--blue2);
     border-radius: 2vw;
-    pointer-events: all;
-    
 }
 
 .grey {
@@ -402,7 +400,9 @@ form h1 {
 form div input,
 form button,
 form textarea,
-form div h1 select {
+form div h1 select,
+.checkbox,
+.upload {
     box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.75) inset;
     display: flex;
     flex-direction: column;
@@ -434,20 +434,58 @@ form > textarea:focus {
     border-color: #ff8000;
 }
 form div h1 input, form div h1 select {
-    width: 100%;
-}
-
-form div h1 div {
-    background-color: #ff0000;
-    color: #444444;
-}
-form div h1 div input[type="file"] {
-    background-color: #fff000;
-    opacity: 0;
+    width: calc(100% - 1vw);
 }
 
 form div h1 span {
     color: red;
+}
+.upload {
+    padding: 0;
+}
+
+.upload input {
+    display: none;
+}
+.upload::marker, .checkbox::marker {
+    color: var(--blue2);
+}
+.upload label {
+    padding: 0.5vw;
+    display: inline-block;
+    width: calc(100% - 1vw);
+    height: 100%;
+}
+
+select,
+label {
+    cursor: pointer;
+}
+
+.datum {
+    display: flex;
+}
+.datum select {
+    flex: 1 1 33%;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked + label {
+    border-color: #00ff2a;
+}
+
+.checkbox::after {
+    content: 'nee';
+}
+input[type=checkbox]:checked + label::after {
+    content: 'ja';
+}
+.checkbox {
+    border-color: #ff0000;
+    box-shadow: none;
 }
 
 .download-list {
