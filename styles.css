@@ -437,11 +437,13 @@ form div h1 input, form div h1 select {
     width: 100%;
 }
 
-form div h1 input[type="file"] {
+form div h1 div {
     background-color: #ff0000;
     color: #444444;
+}
+form div h1 div input[type="file"] {
+    background-color: #fff000;
     opacity: 0;
-    
 }
 
 form div h1 span {
