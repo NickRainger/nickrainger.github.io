@@ -12,6 +12,10 @@
     --blue9: #273a50;
 }
 
+* {
+    scrollbar-width: none;
+}
+
 body {
     background: var(--blue1);
     display: grid;
@@ -22,6 +26,7 @@ body {
 html {
     font-size: 15px;
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 .background1, .background2, .background3, .background4, .background5 {
@@ -470,7 +475,7 @@ label {
 }
 
 input[type="checkbox"] {
-    visibility: hidden;
+    display: none;
 }
 
 input[type=checkbox]:checked + label {
