@@ -14,13 +14,18 @@ document.addEventListener('click', e=> {
     })
 })
 
-function toggle_light_mode() {
-    var app = document.getElementsByTagName("BODY")[0];
-    if (localStorage.lightMode == "dark") {
-	localStorage.lightMode = "light";
-	app.setAttribute("light-mode", "light");
+
+
+function toggle_theme() {
+    var app = document.getElementsByTagName("BODY")[0]
+
+    if (localStorage.getItem("theme") == "dark") {
+	    localStorage.setItem("theme", "light")
+	    app.setAttribute("theme", "light")
     } else {
-	localStorage.lightMode = "dark";
-	app.setAttribute("light-mode", "dark");
-    }		
+	    localStorage.setItem("theme", "dark")
+	    app.setAttribute("theme", "dark")
+    }
 }
+
+document.getElementsByTagName("BODY")[0].setAttribute("theme", localStorage.getItem("theme"))

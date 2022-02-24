@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-:root {
-    --blue1: #060c11;
-    --blue2: #091219;
-    --blue3: #0c1821;
-    --blue4: #101d29;
-    --blue5: #142131;
-    --blue6: #182639;
-    --blue7: #1b2a41;
-    --blue8: #213249;
-    --blue9: #273a50;
+:root {/*
     --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.75);
     --box-shadow-inset: 0 0 5px 5px rgba(0, 0, 0, 0.75) inset;
     --box-shadow: none;
-    --box-shadow-inset: none;
+    --box-shadow-inset: none;*/
 }
 
 body {
-    background: var(--blue1);
+    --color1: #060c11;
+    --color2: #091219;
+    --color3: #0c1821;
+    --color4: #101d29;
+    --color5: #142131;
+    --color6: #182639;
+    --color7: #1b2a41;
+    --color8: #213249;
+    --color9: #273a50;
+    --text: #fff;
+    --text-opacity: #ffffff88;
+    background: var(--color1);
     display: grid;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
+}
+body[theme="light"] {
+    
+    --color1: #fff;
+    --color2: #eee;
+    --color3: #ddd;
+    --color4: #ccc;
+    --color5: #bbb;
+    --color6: #aaa;
+    --color7: #999;
+    --color8: #888;
+    --color9: #777;
+    --text: #000;
+    --text-opacity: #00000088;
 }
 
 html {
@@ -114,7 +130,8 @@ html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
+    transition: ease-in-out 300ms;
 }
 
 .header {
@@ -158,6 +175,9 @@ html {
     transform: scale(1.05);
     color: #ffffff;
 }
+div h1 {
+    color: var(--text);
+}
 
 .nieuws-container {
     display: flex;
@@ -166,7 +186,7 @@ html {
 
 .nieuws-header {
     width: 90vw;
-    background: var(--blue2);
+    background: var(--color2);
     border-radius: 2.5vh;
     margin: 2.5vw;
     padding: 2.5vw;
@@ -186,7 +206,7 @@ html {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     color: #ffffff80;
-    text-decoration-color: var(--blue4);
+    text-decoration-color: var(--color4);
     transition: 200ms ease-in-out;
 }
 .nieuws-button:hover {
@@ -200,7 +220,7 @@ html {
 }
 .nieuws-header p span,
 .nieuws-header h1 span {
-    background: var(--blue4);
+    background: var(--color4);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
@@ -230,7 +250,7 @@ html {
 }
 
 .intro-container {
-    background: var(--blue2);
+    background: var(--color2);
     /*box-shadow: var(--box-shadow);*/
     margin: 2.5vw;
     padding: 2.5vw;
@@ -264,7 +284,7 @@ html {
     transform: translateY(-100px);
     pointer-events: none;
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-    background: var(--blue3);
+    background: var(--color3);
     border-radius: 1vh;
 }
 
@@ -280,9 +300,9 @@ html {
 }
 
 .dropdown-heading {
-    border-bottom: 1px solid var(--blue1);
+    border-bottom: 1px solid var(--color1);
     background: linear-gradient(0deg, rgba(42,26,40,1) 0%, rgba(38,26,50,1) 100%); 
-    background: var(--blue4);
+    background: var(--color4);
     padding: .3vw 1vw;
     font-size: 20px;
 }
@@ -290,7 +310,7 @@ html {
 .dropdown-links {
     border-bottom-left-radius: 3vh;
     border-bottom-right-radius: 3vh;
-    background: var(--blue3);
+    background: var(--color3);
     display: flex;
     flex-direction: column;
     gap: .25rem;
@@ -350,7 +370,7 @@ html.swup-enebled {
 .training a {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: blue;
+    text-decoration-color: #0000ff;
 }
 
 .arrowdown {
@@ -368,7 +388,7 @@ html.swup-enebled {
 
 .fa-map-marker-alt {
     cursor: pointer;
-    color: blue;
+    color: #0000ff;
     font-size: 10vh;
 }
 
@@ -376,7 +396,7 @@ form {
     padding: 5vw;
     margin: 5vw;
     width: 80vw;
-    background: var(--blue2);
+    background: var(--color2);
     border-radius: 2vw;
 }
 
@@ -387,7 +407,7 @@ form {
 form button {
     font-size: 1rem;
     list-style-type: none;
-    background: var(--blue3);
+    background: var(--color3);
     padding: .5vw;
     margin: 2vw .5vw;
     width: auto;
@@ -408,19 +428,18 @@ form textarea,
 form div h1 select,
 .checkbox label,
 .upload {
-    /*box-shadow: var(--box-shadow-inset);*/
     display: flex;
     flex-direction: column;
     font-size: 15px;
     padding: .5vw;
-    border-radius: 5px;
+    border-radius: 10px;
     display: list-item;
     border-style: solid;
     border-bottom-style: solid;
-    border-bottom-width: 5px;
-    border-color: var(--blue4);
-    background: var(--blue3);
-    color: rgb(255, 255, 255);
+    border-width: 5px;
+    border-color: var(--color4);
+    background: var(--color3);
+    color: var(--text);
     outline: 0;
     transition: ease-in-out 300ms;
 }
@@ -464,7 +483,7 @@ form div h1 span {
 }
 
 .upload::marker, .checkbox label::marker {
-    color: var(--blue2);
+    color: var(--color2);
 }
 
 .upload label {
@@ -490,11 +509,15 @@ input[type="checkbox"] {
 }
 
 .checkbox label {
-    border-color: var(--blue4);
+    border-color: var(--color4);
 }
 
 input[type=checkbox]:checked + label {
-    border-color: #00ff2a;
+    border-color: #00ff00;
+}
+
+input[type=checkbox]:hover + label {
+    border-color: #008800;
 }
 
 .checkbox label::after {
@@ -522,7 +545,7 @@ input[type=checkbox]:checked + label::after {
     border-radius: 5vh;
     line-height: 5vw;
     font-size: 1vw;
-    background: var(--blue2);
+    background: var(--color2);
     /*box-shadow: var(--box-shadow-inset);*/
     border-style: none;
     border-bottom-style: solid;
@@ -561,7 +584,7 @@ input[type=checkbox]:checked + label::after {
     flex: 50%;
     padding: 2.5vh;
     margin: 2.5vh;
-    background: var(--blue2);
+    background: var(--color2);
     border-radius: 5vh;
     /*box-shadow: var(--box-shadow);*/
 }
@@ -579,7 +602,7 @@ input[type=checkbox]:checked + label::after {
 .teams-container a {
     padding: 2vh;
     margin: 1vh;
-    background: var(--blue3);
+    background: var(--color3);
     border-radius: 3vh;
     /*box-shadow: var(--box-shadow);*/
     transition: 500ms;
@@ -599,7 +622,7 @@ input[type=checkbox]:checked + label::after {
     pointer-events: all;
     width: 100vw;
     padding: 1vw;
-    background: var(--blue1);
+    background: var(--color1);
 }
 
 .team-header img {
@@ -612,7 +635,7 @@ input[type=checkbox]:checked + label::after {
 
 .team-text-title {
     /*box-shadow: var(--box-shadow);*/
-    background: var(--blue3);
+    background: var(--color3);
     border-radius: 2vw;
     font-size: 30px;
     padding: 30px;
@@ -666,7 +689,7 @@ input[type=checkbox]:checked + label::after {
 footer > div {
     flex-wrap: wrap;
     /*box-shadow: var(--box-shadow);*/
-    background: var(--blue3);
+    background: var(--color3);
     border-top-left-radius: 2.5vh;
     border-top-right-radius: 2.5vh;
     margin: 2.5vw;
@@ -694,7 +717,7 @@ footer div div{
 
 footer div a:hover,
 footer div div {
-    background: var(--blue4);
+    background: var(--color4);
     transition: 500ms;
     /*box-shadow: var(--box-shadow);*/
 }
