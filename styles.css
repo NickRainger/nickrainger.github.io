@@ -564,9 +564,8 @@ input[type=checkbox]:checked + label::after {
     display: grid;
     flex-wrap: wrap;
     flex: 50%;
-    width: 95vw;
-    padding: 1.25vw;
-    margin: 1.25vw;
+    padding: 2.5vh;
+    margin: 2.5vh;
     background: var(--blue2);
     border-radius: 5vh;
     box-shadow: var(--box-shadow);
@@ -583,9 +582,8 @@ input[type=checkbox]:checked + label::after {
 }
 
 .teams-container a {
-    
-    padding: 1vw;
-    margin: .5vw;
+    padding: 2vh;
+    margin: 1vh;
     background: var(--blue3);
     border-radius: 3vh;
     box-shadow: var(--box-shadow);
@@ -594,8 +592,7 @@ input[type=checkbox]:checked + label::after {
 
 .teams-container a img {
     float: right;
-    width: 45%;
-    margin-right: 5%;
+    width: 50%;
     border-radius: 1vh;
 }
 
@@ -610,7 +607,7 @@ input[type=checkbox]:checked + label::after {
     background: var(--blue1);
 }
 
-.team-foto {
+.team-header img {
     box-shadow: var(--box-shadow);
     border-radius: 2vw;
     width: 40vw;
