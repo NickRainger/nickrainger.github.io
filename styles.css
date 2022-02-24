@@ -144,6 +144,16 @@ html {
     opacity: 0;
     animation: header 500ms 500ms ease-in-out forwards;
 }
+.header > a,
+.header div button a,
+.header button {
+    color: #ffffff88;
+}
+.header > a:hover,
+.header div button a:hover,
+.header button:hover {
+    color: #ffffff;
+}
 @keyframes header {
     0% {transform: translateY(-100px); opacity: 0;}
     70% {transform: translateY(10px);}
@@ -151,8 +161,7 @@ html {
 }
 
 .link {
-    color: #ffffff80;
-    margin: .3vw 1vw;
+    padding: .3vw 1vw;
     background: none;
     font-size: 15px;
     border-style: none;
@@ -164,10 +173,6 @@ html {
     border-style: none;
     outline: none;
     cursor: pointer;
-    color: #ffffff80;
-}
-.link a:hover {
-    color: #ffffff;
 }
 
 .link:hover,
@@ -259,6 +264,9 @@ div h1 {
     display: flex;
     flex-direction: column;
 }
+.intro-container p {
+    color: var(--text);
+}
 .intro-text p {
     margin-left: 1vw;
 }
@@ -305,6 +313,7 @@ div h1 {
     background: var(--color4);
     padding: .3vw 1vw;
     font-size: 20px;
+    color: var(--text);
 }
 
 .dropdown-links {
@@ -314,6 +323,12 @@ div h1 {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+}
+.dropdown-links a {
+    color: var(--text-opacity);
+}
+.dropdown-links a:hover {
+    color: var(--text);
 }
 .small-spacer {
     z-index: -9;
@@ -418,6 +433,7 @@ form button:hover {
 }
 
 form h1 {
+    color: var(--text);
     margin: 3vw 1vw 0;
     flex: 1 1 15em;
 }
