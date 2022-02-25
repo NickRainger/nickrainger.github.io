@@ -19,7 +19,7 @@ body {
     --color9: #273a50;
     --text: #fff;
     --text-opacity: #ffffff88;
-    background: var(--color1);
+    width: 100vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
     overflow-x: hidden;
@@ -38,11 +38,14 @@ body[theme="light"] {
     --text: #000;
     --text-opacity: #00000088;
 }
+body {
+    overflow-x: hidden;
+    background: var(--color1);
+}
 
 html {
     font-size: 15px;
     scroll-behavior: smooth;
-    width: 100vw;
     scrollbar-width: none;
 }
 
