@@ -17,12 +17,11 @@ body {
     --color7: #1b2a41;
     --color8: #213249;
     --color9: #273a50;
-    --text: #fff;
-    --text-opacity: #ffffff88;
+    --text: #ffffff;
+    --text-opacity: var(--text)88;
     width: 100vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    overflow-x: hidden;
 }
 body[theme="light"] {
     
@@ -35,8 +34,8 @@ body[theme="light"] {
     --color7: #999;
     --color8: #888;
     --color9: #777;
-    --text: #000;
-    --text-opacity: #00000088;
+    --text: #000000;
+    --text-opacity: var(--text)88;
 }
 body {
     overflow-x: hidden;
