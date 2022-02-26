@@ -19,12 +19,12 @@ document.addEventListener('click', e=> {
 function toggle_theme() {
     var app = document.getElementsByTagName("BODY")[0]
 
-    if (localStorage.getItem("theme") == "dark") {
-	    localStorage.setItem("theme", "light")
-	    app.setAttribute("theme", "light")
-    } else {
+    if (localStorage.getItem("theme") == "light") {
 	    localStorage.setItem("theme", "dark")
 	    app.setAttribute("theme", "dark")
+    } else {
+	    localStorage.setItem("theme", "light")
+	    app.setAttribute("theme", "light")
     }
 }
 
