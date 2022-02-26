@@ -25,11 +25,11 @@ body {
 }
 body[theme="light"] {
     
-    --color1: #fff;
-    --color2: #eee;
-    --color3: #ddd;
-    --color4: #ccc;
-    --color5: #bbb;
+    --color1: #fafafa;
+    --color2: #e4e5f1;
+    --color3: #d2d3db;
+    --color4: #9394a5;
+    --color5: #484b6a;
     --color6: #aaa;
     --color7: #999;
     --color8: #888;
