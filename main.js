@@ -14,16 +14,31 @@ document.addEventListener('click', e => {
     })
 })
 
-function toggle_theme() {
+var icon = document.getElementById("icon")
+
+icon.onclick = function() {
     var app = document.getElementsByTagName("BODY")[0]
 
     if (localStorage.getItem("theme") == "light") {
-	    localStorage.setItem("theme", "dark")
-	    app.setAttribute("theme", "dark")
+	    localStorage.setItem("theme", "dark");
+	    app.setAttribute("theme", "dark");
+        icon.src = "img/moon.png";
+        icon.style.background = "#fff"
     } else {
-	    localStorage.setItem("theme", "light")
-	    app.setAttribute("theme", "light")
+	    localStorage.setItem("theme", "light");
+	    app.setAttribute("theme", "light");
+        icon.src = "img/sun.png";
+        icon.style.background = "#091219"
     }
 }
 
 document.getElementsByTagName("BODY")[0].setAttribute("theme", localStorage.getItem("theme"))
+var theme = localStorage.getItem("theme")
+if (theme == "light") {
+    icon.src = "img/sun.png";
+    icon.style.background = "#091219"
+} else {
+    icon.src = "img/moon.png";
+    icon.style.background = "#fff"
+}
+navigator.clipboard.writeText('copyText.vafdsflue');
