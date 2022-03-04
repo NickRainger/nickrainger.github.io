@@ -20,7 +20,7 @@ body {
     --color8: #213249;
     --color9: #273a50;
     --text: #ffffff;
-    --text-opacity: var(--text)80;
+    --text-opacity: #ffffff80;
     width: 100vw;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -37,7 +37,7 @@ body[theme="light"] {
     --color8: #888;
     --color9: #777;
     --text: #000000;
-    --text-opacity: var(--text)80;
+    --text-opacity: #00000080;
 }
 body {
     overflow-x: hidden;
@@ -203,6 +203,7 @@ div h1 {
 
 .nieuws-header p {
     font-size: 15px;
+    color: var(--text);
 }
 
 .nieuws-title {
@@ -216,12 +217,13 @@ div h1 {
     text-decoration-thickness: 3px;
     color: #ffffff80;
     text-decoration-color: var(--color4);
+    color: var(--text-opacity);
     transition: 200ms ease-in-out;
 }
 .nieuws-button:hover {
     transition: 200ms ease-in-out;
     text-decoration-color: #0000ff;
-    color: #ffffff;
+    color: var(--text);
 }
 .nieuws-terug {
     font-size: 20px;
@@ -256,6 +258,7 @@ div h1 {
 .contact-link {
     cursor: pointer;
     pointer-events: all;
+    color: var(--text);
 }
 
 .intro-container {
@@ -665,6 +668,8 @@ input[type=checkbox]:checked + label::after {
 .team-text,
 .team-text span,
 .team-text a{
+    color: var(--text);
+    text-decoration-color: #0000ff;
     border-radius: 5px;
     right: 0;
     font-size: 20px;
@@ -755,16 +760,26 @@ hr {
 }
 
 #icon {
+    cursor: pointer;
+    filter: invert(50%);
+    height: 5vh;
+    width: 5vh;
+}
+
+#theme-button {
+    height: 5vh;
+    width: 5vh;
+    padding: 1vh;
+    margin: 1vh;
     position: fixed;
     top: 91vh;
     left: 0;
-    height: 5vh;
-    width: 5vh;
     border-radius: 25%;
-    padding: 1vh;
-    margin: 1vh;
-    cursor: pointer;
-    filter: invert(100%)
+    background-color: var(--color1);
+}
+
+.btn {
+    color: var(--text);
 }
 
 @media screen and (min-width: 801px) {

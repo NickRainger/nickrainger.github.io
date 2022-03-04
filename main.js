@@ -15,6 +15,7 @@ document.addEventListener('click', e => {
 })
 
 var icon = document.getElementById("icon")
+var themeButton = document.getElementById("theme-button")
 
 icon.onclick = function() {
     var app = document.getElementsByTagName("BODY")[0]
@@ -23,12 +24,10 @@ icon.onclick = function() {
 	    localStorage.setItem("theme", "dark");
 	    app.setAttribute("theme", "dark");
         icon.src = "img/moon.png";
-        icon.style.background = "#fff"
     } else {
 	    localStorage.setItem("theme", "light");
 	    app.setAttribute("theme", "light");
         icon.src = "img/sun.png";
-        icon.style.background = "#091219"
     }
 }
 
@@ -36,9 +35,7 @@ document.getElementsByTagName("BODY")[0].setAttribute("theme", localStorage.getI
 var theme = localStorage.getItem("theme")
 if (theme == "light") {
     icon.src = "img/sun.png";
-    icon.style.background = "#091219"
 } else {
     icon.src = "img/moon.png";
-    icon.style.background = "#fff"
 }
-navigator.clipboard.writeText('copyText.vafdsflue');
+//navigator.clipboard.writeText('copyText.value');
