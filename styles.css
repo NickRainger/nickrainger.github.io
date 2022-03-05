@@ -772,15 +772,122 @@ hr {
     padding: 1vh;
     margin: 1vh;
     position: fixed;
-    top: 91vh;
+    top: 89vh;
     left: 0;
     border-radius: 25%;
     background-color: var(--color1);
+    border: 1vh solid var(--color3);
 }
 
 .btn {
     color: var(--text);
 }
+
+
+
+
+
+
+
+
+.search-button {
+  padding: 0;
+  margin: 1vh;
+  width: 5vh;
+  height: 5vh;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search {
+  position: absolute;
+  top: 89vh;
+  right: 0;
+  background: var(--color1);
+  border: 1vh solid var(--color3);
+  border-radius: 25%;
+  margin: 1vh;
+}
+
+i {
+  color: #808080;
+  font-size: 4vh;
+}
+
+.search-container {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 75vw;
+  height: 75vh;
+  overflow-y: scroll;
+  top: -40vh;
+  left: -45vw;
+  transform: translate(-50%, -50%);
+  background-color: var(--color1);
+  border-radius: 5vh;
+}
+
+.search.active > .search-container {
+  display: block;
+  animation: search 1000ms forwards;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+input {
+  border: 5px solid var(--color3);
+  background: var(--color1);
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  color: var(--text);
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .25rem;
+  margin: 1rem;
+}
+
+.card {
+  border: 5px solid var(--color3);
+  background: var(--color1);
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.card > * {
+    color: var(--text);
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes search {
+  0% {
+    opacity: 0;
+    transform: translate(-10%, -10%);
+    scale: .1;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
 
 @media screen and (min-width: 801px) {
     form div {
@@ -871,7 +978,7 @@ hr {
         color: white;
     }
     
-    .dropdown.active > .link + .dropdown-menu {
+    .dropdown.active > .dropdown-menu {
         opacity: 1;
         transform: translateY(0px);
         pointer-events: auto;

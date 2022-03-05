@@ -17,6 +17,23 @@
     <div id="theme-button">
         <img id="icon" aria-label="Toggle Theme"></img>
     </div>
+    <div id="btn" class="search" data-dropdown>
+        <button class="search-button"><i class="fas fa-search" data-dropdown-button></i></button>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <label for="search"></label>
+                <input type="search" id="search" placeholder="dfjsakfnasdkjf" data-search >
+            </div>
+            <div class="user-cards" data-user-cards-container></div>
+            <template data-user-template >
+                <div class="card">
+                    <div class="subFolder" data-subfolder ></div>
+                    <div class="site" data-site ></div>
+                    <a href="#" class="url" data-url >Naar pagina</a>
+                </div>
+            </template>
+        </div>
+    </div>
     <main id="swup" class="transition-fade">
         <div class="big-spacer"></div>
         <section>

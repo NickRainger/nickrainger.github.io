@@ -1,0 +1,32 @@
+[
+  {
+    "subFolder": "",
+    "site": "",
+    "url": ""
+  },
+  {
+    "subFolder": "",
+    "site": "Home",
+    "url": "/index.html"
+  },
+  {
+    "subFolder": "Nieuws/",
+    "site": "ALV 22-11",
+    "url": "/Nieuws/ALV-22-11"
+  },
+  {
+    "subFolder": "Nieuws/",
+    "site": "Corona update 16",
+    "url": "/Nieuws/ALV-22-11.html"
+  },
+  {
+    "subFolder": "Nieuws/",
+    "site": "Coronamaatregelen",
+    "url": "/Nieuws/coronamaatregelen"
+  },
+  {
+    "subFolder": "Nieuws/",
+    "site": "Wdstrijdverslag Dames 1",
+    "url": "/Nieuws/Wedstrijdverslag Dames-1- 28-10"
+  }
+]
