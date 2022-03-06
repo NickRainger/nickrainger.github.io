@@ -772,23 +772,16 @@ hr {
     padding: 1vh;
     margin: 1vh;
     position: fixed;
-    top: 89vh;
+    top: 90vh;
     left: 0;
     border-radius: 25%;
     background-color: var(--color1);
-    border: 1vh solid var(--color3);
+    border: .5vh solid var(--color3);
 }
 
 .btn {
     color: var(--text);
 }
-
-
-
-
-
-
-
 
 .search-button {
   padding: 0;
@@ -801,11 +794,11 @@ hr {
 }
 
 .search {
-  position: absolute;
-  top: 89vh;
+  position: fixed;
+  top: 90vh;
   right: 0;
   background: var(--color1);
-  border: 1vh solid var(--color3);
+  border: .5vh solid var(--color3);
   border-radius: 25%;
   margin: 1vh;
 }
@@ -816,9 +809,9 @@ i {
 }
 
 .search-container {
+  position: absolute;
   display: none;
   opacity: 0;
-  position: absolute;
   width: 75vw;
   height: 75vh;
   overflow-y: scroll;
@@ -827,11 +820,12 @@ i {
   transform: translate(-50%, -50%);
   background-color: var(--color1);
   border-radius: 5vh;
+  animation: search 1000ms alternate-reverse;
 }
 
 .search.active > .search-container {
   display: block;
-  animation: search 1000ms forwards;
+  animation: search 1000ms both;
 }
 
 .search-wrapper {
@@ -841,7 +835,7 @@ i {
 }
 
 input {
-  border: 5px solid var(--color3);
+  border: .5vh solid var(--color3);
   background: var(--color1);
   font-size: 1rem;
   border-radius: 1rem;
