@@ -20,7 +20,8 @@ searchInput.addEventListener("input", e => {
     const isVibible =
       user.site.toLowerCase().includes(value) ||
       user.subFolder.toLowerCase().includes(value) ||
-      user.url.toLowerCase().includes(value)
+      user.url.toLowerCase().includes(value) ||
+      user.img.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVibible)
   })
 })
@@ -33,11 +34,13 @@ fetch("sites.json")
       const subFolder = card.querySelector("[data-subfolder]")
       const site = card.querySelector("[data-site]")
       const url = card.querySelector("[data-url]")
+      const img = card.querySelector("[data-img]")
       site.textContent = user.site
       subFolder.textContent = user.subFolder
       url.href = user.url
+      img.src = user.img
       //url.textContent = user.urlName
       userCardContainer.append(card)
-      return { site: user.site, subFolder: user.subFolder, url: user.url, element: card }
+      return { site: user.site, subFolder: user.subFolder, url: user.url, img: user.img, element: card }
     });
   })

@@ -17,26 +17,28 @@ document.addEventListener('click', e => {
 
 var icon = document.getElementById("icon")
 var themeButton = document.getElementById("theme-button")
+var app = document.getElementsByTagName("BODY")[0]
 
 icon.onclick = function() {
-    var app = document.getElementsByTagName("BODY")[0]
 
-    if (localStorage.getItem("theme") == "light") {
-	    localStorage.setItem("theme", "dark");
-	    app.setAttribute("theme", "dark");
-        icon.src = "img/moon.png";
-    } else {
+    if (localStorage.getItem("theme") == "dark") {
 	    localStorage.setItem("theme", "light");
 	    app.setAttribute("theme", "light");
         icon.src = "img/sun.png";
+    } else {
+	    localStorage.setItem("theme", "dark");
+	    app.setAttribute("theme", "dark");
+        icon.src = "img/moon.png";
     }
 }
 
 document.getElementsByTagName("BODY")[0].setAttribute("theme", localStorage.getItem("theme"))
 var theme = localStorage.getItem("theme")
-if (theme == "light") {
-    icon.src = "img/sun.png";
-} else {
+if (theme == "dark") {
     icon.src = "img/moon.png";
+    app.setAttribute("theme", "dark");
+} else {
+    icon.src = "img/sun.png";
+    app.setAttribute("theme", "light");
 }
 //navigator.clipboard.writeText('copyText.value');

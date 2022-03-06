@@ -10,6 +10,12 @@
 #1A202C
 */
 body {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+body[theme="dark"] {
     --color1: #060c11;
     --color2: #091219;
     --color3: #0c1821;
@@ -21,10 +27,9 @@ body {
     --color9: #273a50;
     --text: #ffffff;
     --text-opacity: #ffffff80;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    --input: #008000;
 }
+
 body[theme="light"] {
     
     --color1: #fafafa;
@@ -38,6 +43,7 @@ body[theme="light"] {
     --color9: #777;
     --text: #000000;
     --text-opacity: #00000080;
+    --input: #4aca53;
 }
 body {
     overflow-x: hidden;
@@ -134,7 +140,7 @@ html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #fff;
+    /*color: #fff;*/
     transition: ease-in-out 300ms;
 }
 
@@ -232,6 +238,7 @@ div h1 {
 .nieuws-header p span,
 .nieuws-header h1 span {
     background: var(--color4);
+    color: #fff;
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
@@ -382,6 +389,7 @@ html.swup-enebled {
     left: 25vw;
     font-size: 10vh;
     z-index: -1;
+    color: #fff;
 }
 
 .main-title span {
@@ -390,9 +398,14 @@ html.swup-enebled {
 
 .BUnderline,
 .training a {
+    color: var(--text);
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: #0000ff;
+}
+
+.main-title .BUnderline {
+    color: #fff;
 }
 
 .arrowdown {
@@ -541,7 +554,7 @@ input[type=checkbox]:checked + label {
 }
 
 input[type=checkbox]:hover + label {
-    border-color: #008800;
+    border-color: var(--input);
 }
 
 .checkbox label::after {
@@ -602,8 +615,8 @@ input[type=checkbox]:checked + label::after {
 
 .teams-container {
     font-size: 20px;
-    grid-template-columns: auto auto auto;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     flex-wrap: wrap;
     flex: 50%;
     padding: 2.5vh;
@@ -612,34 +625,25 @@ input[type=checkbox]:checked + label::after {
     border-radius: 5vh;
     /*box-shadow: var(--box-shadow);*/
 }
-@media screen and (max-width: 1200px) {
-    .teams-container {
-        grid-template-columns: auto auto;
-    }
-}
-@media screen and (max-width: 800px) {
-    .teams-container {
-    grid-template-columns:  auto;
-    }
-}
 
 .teams-container a {
     padding: 2vh;
     margin: 1vh;
-    background: var(--color3);
+    color: var(--text);
+    border: 5px var(--color3) solid;
     border-radius: 3vh;
     /*box-shadow: var(--box-shadow);*/
     transition: 500ms;
+}
+
+.teams-container a:hover {
+    transform: scale(1.02);
 }
 
 .teams-container a img {
     float: right;
     width: 50%;
     border-radius: 1vh;
-}
-
-.teams-container a:hover {
-    transform: scale(1.05);
 }
 
 .team-header {
@@ -707,7 +711,8 @@ input[type=checkbox]:checked + label::after {
     font-size: 40px;
     position: absolute;
     pointer-events: all;
-    cursor: pointer;    
+    cursor: pointer;
+    color: #fff;
     text-decoration-thickness: 5px;
 }
 
@@ -767,6 +772,7 @@ hr {
 }
 
 #theme-button {
+    opacity: .5;
     height: 5vh;
     width: 5vh;
     padding: 1vh;
@@ -777,6 +783,10 @@ hr {
     border-radius: 25%;
     background-color: var(--color1);
     border: .5vh solid var(--color3);
+}
+
+#theme-button:hover {
+    opacity: 1;
 }
 
 .btn {
@@ -794,6 +804,7 @@ hr {
 }
 
 .search {
+  opacity: .5;
   position: fixed;
   top: 90vh;
   right: 0;
@@ -801,6 +812,10 @@ hr {
   border: .5vh solid var(--color3);
   border-radius: 25%;
   margin: 1vh;
+}
+
+.search:hover {
+    opacity: 1;
 }
 
 i {
@@ -819,7 +834,7 @@ i {
   left: -45vw;
   transform: translate(-50%, -50%);
   background-color: var(--color1);
-  border-radius: 5vh;
+  border-radius: 2rem;
   animation: search 1000ms alternate-reverse;
 }
 
@@ -835,7 +850,7 @@ i {
 }
 
 input {
-  border: .5vh solid var(--color3);
+  border: 5px solid var(--color3);
   background: var(--color1);
   font-size: 1rem;
   border-radius: 1rem;
@@ -846,7 +861,7 @@ input {
 .user-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: .25rem;
+  gap: 1vh;
   margin: 1rem;
 }
 
@@ -859,10 +874,32 @@ input {
 
 .card > * {
     color: var(--text);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.site {
+    border-bottom: var(--color3) solid 5px;
+    border-top: var(--color3) solid 5px;
 }
 
 .hide {
   display: none;
+}
+
+.url {
+    color: #0000ff;
+    text-decoration: underline;
+    text-decoration-color: #00f;
+    text-decoration-thickness: 2px;
+}
+.url:hover {
+    text-decoration-thickness: 3px;
+}
+
+.img {
+    border-radius: 1vh;
+    width: 100%;
 }
 
 @keyframes search {

@@ -1,32 +1,24 @@
 [
-  {
-    "subFolder": "",
-    "site": "",
-    "url": ""
-  },
-  {
-    "subFolder": "",
-    "site": "Home",
-    "url": "/index.html"
-  },
-  {
-    "subFolder": "Nieuws/",
-    "site": "ALV 22-11",
-    "url": "/Nieuws/ALV-22-11"
-  },
-  {
-    "subFolder": "Nieuws/",
-    "site": "Corona update 16",
-    "url": "/Nieuws/ALV-22-11.html"
-  },
-  {
-    "subFolder": "Nieuws/",
-    "site": "Coronamaatregelen",
-    "url": "/Nieuws/coronamaatregelen"
-  },
-  {
-    "subFolder": "Nieuws/",
-    "site": "Wdstrijdverslag Dames 1",
-    "url": "/Nieuws/Wedstrijdverslag Dames-1- 28-10"
-  }
+ { "subFolder": "", "site": "", "url": "/", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "", "site": "Home", "url": "/index.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "", "site": "Nieuws", "url": "/Nieuws.html", "img": "/Teams/img/placeholder.png" },
+
+ { "subFolder": "Nieuws/", "site": "ALV 22-11", "url": "/Nieuws/ALV-22-11", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Nieuws/", "site": "Corona update 16", "url": "/Nieuws/ALV-22-11.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Nieuws/", "site": "Coronamaatregelen", "url": "/Nieuws/coronamaatregelen", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Nieuws/", "site": "Wedstrijdverslag Dames 1", "url": "/Nieuws/Wedstrijdverslag Dames-1- 28-10", "img": "/Teams/img/placeholder.png" },
+
+
+ 
+ { "subFolder": "", "site": "Teams", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "CMV N2", "url": "/Teams/Cmv-n2.html", "img": "/Teams/img/Cmv-n2 1-1.png" },
+ { "subFolder": "Teams/", "site": "CMV N5", "url": "/Teams/Cmv-n5.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "CMV N6", "url": "/Teams/Cmv-n6.html", "img": "/Teams/img/Cmv-n6 1-1.png" },
+ { "subFolder": "Teams/", "site": "Jongens B", "url": "/Teams.html", "img": "/Teams/img/Jongens-B 1-1.png" },
+ { "subFolder": "Teams/", "site": "Meisjes B", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "Heren 1", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "Dames 1", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "Dames 2", "url": "/Teams.html", "img": "/Teams/img/Dames-2 1-1.png" },
+ { "subFolder": "Teams/", "site": "Recreanten H1", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" },
+ { "subFolder": "Teams/", "site": "Recreanten H2", "url": "/Teams.html", "img": "/Teams/img/placeholder.png" }
 ]
