@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.png">
-    <script src="https://kit.fontawesome.com/b44cce2a08.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script defer src="/script.js"></script>
-    <link rel="stylesheet" href="/styles.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.png">
+  <script src="https://kit.fontawesome.com/b44cce2a08.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="/script.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <title>Home</title>
 </head>
+
 <body>
-    <div id="header"></div>
-    <div id="theme-button">
-        <img id="icon" aria-label="Toggle Theme"></img>
-    </div>
-    <div id="btn" class="search" data-dropdown>
-        <button class="search-button"><i class="fas fa-search" data-dropdown-button></i></button>
-        <div class="search-container">
-            <div class="search-wrapper">
-                <label for="search"></label>
-                <input type="search" id="search" placeholder="dfjsakfnasdkjf" data-search >
-            </div>
-            <div class="user-cards" data-user-cards-container></div>
-            <template data-user-template >
-                <div class="card">
-                        <img class="img" src="" alt="" data-img >
-                        <div class="subFolder" data-subfolder ></div>
-                        <div class="site" data-site ></div>
-                    <a href="#" class="url" data-url >Naar pagina</a>
-                </div>
-            </template>
+  <div id="header"></div>
+  <div id="theme-button">
+    <img id="icon" aria-label="Toggle Theme"></img>
+  </div>
+  <div id="btn" class="search" data-dropdown>
+    <button class="search-button"><i class="fas fa-search" data-dropdown-button></i></button>
+    <div class="search-container">
+      <div class="search-wrapper">
+        <label for="search"></label>
+        <input type="search" id="search" placeholder="dfjsakfnasdkjf" data-search>
+      </div>
+      <div class="user-cards" data-user-cards-container></div>
+      <template data-user-template>
+        <div class="card">
+          <img class="img" src="" alt="" data-img>
+          <div class="subFolder" data-subfolder></div>
+          <div class="site" data-site></div>
+          <a href="#" class="url" data-url>Naar pagina</a>
         </div>
+      </template>
     </div>
-    <main id="swup" class="transition-fade">
-        <div class="big-spacer"></div>
-        <section>
-            <div class="intro-container">
-                <h1 class="intro-title">Welkom bij volleybalvereniging Excelsior!</h1>
-                <p class="intro-text">Wij zijn een leuke en gezellige volleybalvereniging in Rhenen. Onze vereniging beschikt over 3 senioren teams, 2 recreanten teams, en meer dan genoeg jeugd- en mini teams. Mocht je nou interesse hebben. Neem dan <a href="/Contact.html" class="contact-link BUnderline">contact</a> met ons op. Neem vooral een kijkje onder het kopje ‘teams’ hoe onze teams samengesteld zijn en wanneer ze trainen. Kijk ook eens onder het kopje ‘nieuws’ om op de hoogte te blijven van al onze mededelingen en wedstrijdverslagen!</p><p>Hopelijk tot ziens!</p>
-            </div>
-        </section>
-        <h1 class="main-title">
-            <span class="BUnderline">Excelsior</span>
-            <br>Volleybal<br>
-            <a href="https://duckduckgo.com/?q=%E2%80%99t+Gastland&ia=web&iaxm=maps&strict_bbox=0&bbox=52.0185118093843%2C5.4674020022483205%2C51.94321910938428%2C5.6678441977517195&metatoken=0" class="RhenenLink" target="_blank">Rhenen 
-                <i class="fas fa-map-marker-alt"></i>
-            </a>
-            <p class="arrowdown">▼</p>
-        </h1>
-        <a href="/Info/Lidmaatschap.html" class="cta">Waarom<br><span class="BUnderline">Excelsior?</span>
-        </a><!--
+  </div>
+  <main id="swup" class="transition-fade">
+    <div class="big-spacer"></div>
+    <section>
+      <div class="intro-container">
+        <h1 class="intro-title">Welkom bij volleybalvereniging Excelsior!</h1>
+        <p class="intro-text">Wij zijn een leuke en gezellige volleybalvereniging in Rhenen. Onze vereniging beschikt over 3 senioren teams, 2 recreanten teams, en meer dan genoeg jeugd- en mini teams. Mocht je nou interesse hebben. Neem dan <a href="/Contact.html" class="contact-link BUnderline">contact</a> met ons op. Neem vooral een kijkje onder het kopje ‘teams’ hoe onze teams samengesteld zijn en wanneer ze trainen. Kijk ook eens onder het kopje ‘nieuws’ om op de hoogte te blijven van al onze mededelingen en wedstrijdverslagen!</p>
+        <p>Hopelijk tot ziens!</p>
+      </div>
+    </section>
+    <h1 class="main-title">
+      <span class="BUnderline">Excelsior</span>
+      <br>Volleybal<br>
+      <a href="https://duckduckgo.com/?q=%E2%80%99t+Gastland&ia=web&iaxm=maps&strict_bbox=0&bbox=52.0185118093843%2C5.4674020022483205%2C51.94321910938428%2C5.6678441977517195&metatoken=0" class="RhenenLink" target="_blank">Rhenen
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <p class="arrowdown">▼</p>
+    </h1>
+    <a href="/Info/Lidmaatschap.html" class="cta">Waarom<br><span class="BUnderline">Excelsior?</span>
+    </a>
+    <!--
         <footer class="footer">
             <div>
                 <div>© 2022 Excelsior volleybal</div>
@@ -70,12 +74,13 @@
                 <a href="/Over.html">Over</a>
             </div>
         </footer>-->
-    </main>
+  </main>
 
-    <a href="/index.html">
-        <img src="/img/logo2.png" alt="Excelsior Logo" class="logo">
-    </a>
-    <div id="wallpaper"></div>
-    <script src="/main.js"></script>
+  <a href="/index.html">
+    <img src="/img/logo2.png" alt="Excelsior Logo" class="logo">
+  </a>
+  <div id="wallpaper"></div>
+  <script src="/main.js"></script>
 </body>
+
 </html>
